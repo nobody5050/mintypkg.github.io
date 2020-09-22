@@ -22,7 +22,6 @@
       measurementId: "G-63RV1J0LJK"
     };
     firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().languageCode = 'en';
     firebase.auth().signInWithRedirect(provider);
