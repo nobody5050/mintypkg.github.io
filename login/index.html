@@ -6,7 +6,32 @@
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     <script type="text/javascript">
-      var uiConfig = {
+        // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBnXkbaED2AeInnZItginGOEVFlCrRk1s4",
+    authDomain: "minty-70da2.firebaseapp.com",
+    databaseURL: "https://minty-70da2.firebaseio.com",
+    projectId: "minty-70da2",
+    storageBucket: "minty-70da2.appspot.com",
+    messagingSenderId: "887993313270",
+    appId: "1:887993313270:web:fb6d3634c36f93845089d7",
+    measurementId: "G-63RV1J0LJK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+    </script>
+  </head>
+  <body>
+    <!-- The surrounding HTML is left untouched by FirebaseUI.
+         Your app may use that space for branding, controls and other customizations.-->
+    <h1>Welcome to My Awesome App</h1>
+    <div id="firebaseui-auth-container"></
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+    <script>
+  var uiConfig = {
         signInSuccessUrl: 'https://mintypkg.github.io',
         signInOptions: [
           firebase.auth.EmailAuthProvider.PROVIDER_ID
@@ -25,31 +50,6 @@
       var ui = new firebaseui.auth.AuthUI(firebase.auth());
       // The start method will wait until the DOM is loaded.
       ui.start('#firebaseui-auth-container', uiConfig);
-    </script>
-  </head>
-  <body>
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-         Your app may use that space for branding, controls and other customizations.-->
-    <h1>Welcome to My Awesome App</h1>
-    <div id="firebaseui-auth-container"></
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
-    <script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyBnXkbaED2AeInnZItginGOEVFlCrRk1s4",
-    authDomain: "minty-70da2.firebaseapp.com",
-    databaseURL: "https://minty-70da2.firebaseio.com",
-    projectId: "minty-70da2",
-    storageBucket: "minty-70da2.appspot.com",
-    messagingSenderId: "887993313270",
-    appId: "1:887993313270:web:fb6d3634c36f93845089d7",
-    measurementId: "G-63RV1J0LJK"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 </script>
   </body>
 </html>
